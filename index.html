@@ -1,69 +1,124 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <title>Angie Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <style>
+  body, html {
+    height: 100%;
+    margin: 0;
+  }
 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
+  .bg {
+    /* The image used */
+    background-image: url("images/ny.jpg");
 
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
+    /* Full height */
+  /*  height: 100%;
 
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #ff8bc3;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #ff8bc3;
-  color: white;
-  transform: rotateY(180deg);
-}
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 </style>
 </head>
 <body>
 
-<h1>Card Flip with Text</h1>
-<h3>Hover over the image below:</h3>
+<div class="jumbotron container-fluid bg">
+  <h1>Angie Long</h1>
+  <p>UX Designer</p>
+</div>
 
-<div class="flip-card">
-  <div class="flip-card-inner">
-    <div class="flip-card-front">
-      <img src="images/cutout.png" alt="Avatar" style="width:300px;height:300px;">
+
+
+<nav class="navbar navbar-expand-sm bg-light">
+<ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="https://docs.google.com/document/d/1qz4giVBwahdmOF-BvMf43GqJE2qa4qSQof0qnmN6-eA/edit">About me</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://drive.google.com/drive/u/0/folders/1aukAioWrBdNzB8BQsB69o-Y99Bmr82Ll">Works</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="https://www.facebook.com/profile.php?id=100003156496597">Contact</a>
+    </li>
+  </ul>
+  </nav>
+
+<div class="container bg">
+  <div class="row">
+
+    <div class="col-sm-5">
+      <h3>About Me</h3>
+      <p>Hi, My name is Angie, UX Designer. I am currently a second year student at UCSD, majoring in COG SCI, with a design and Interaction specialization. Receiving my education at UCSD Cog Sci department gives me the advantage in the cognitive perspective in the design process. I am good at finding user's needs based on cognitive analysis.</p>
+      <p>I enjoy designing user-centered experience.</p>
+       <img src="./images/pro.jpg" class="rounded-circle" alt="profile" style="height: 220px;" width="220">
+       </button>
     </div>
-    <div class="flip-card-back">
-      <h1>John Doe</h1>
-      <p>Architect & Engineer</p>
-      <p>We love that guy</p>
+    <div class="col-sm-5">
+      <h3>My Works</h3>
+     <img src="./images/la.jpg" class="rounded-circle" alt="UCSD library" style="height: 170px;" width="170">
+      <p>Check out my designs!</p>
+      <p>BabyVice is an app taylored for new parents, building a close community for new parents to interact, ask questions, and make posts! This app also allows parents to eaqsily keep track of their baby's growth.</p>
+      <div class="dropdown">
+    <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+      Works
+    </button>
+    <div class="dropdown-menu">
+      <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1aukAioWrBdNzB8BQsB69o-Y99Bmr82Ll">Group file</a>
+      <a class="dropdown-item" href="https://medium.com/me/stories/public">Medium Blog</a>
+      <a class="dropdown-item" href="https://drive.google.com/drive/u/0/folders/1egSVwwgWBkSPOyRZ7VRbDceYKEht9Xig">Prototypes</a>
+    </div>
+  </div>
+    </div>
+    <div class="col-sm-2">
+      <h3>Contact</h3>
+      <p>Connect with Me! </p>
+      <p>Email:ylong@ucsd.edu </p>
+      <p>Instagram: l_o_n_g___
+
+      </div>
+      <p>I am exicited to work with you!</p>
     </div>
   </div>
 </div>
+<div class="container">
+<div id="demo" class="carousel slide" data-ride="carousel">
 
+  <!-- Indicators -->
+  <ul class="carousel-indicators">
+    <li data-target="#demo" data-slide-to="0" class="active"></li>
+    <li data-target="#demo" data-slide-to="1"></li>
+    <li data-target="#demo" data-slide-to="2"></li>
+  </ul>
+
+  <!-- The slideshow -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/persona.jpg" alt="persona" width="1000" height="600">
+    </div>
+    <div class="carousel-item">
+      <img src="images/chicago.jpg" alt="Chicago" width="1000" height="600">
+    </div>
+    <div class="carousel-item">
+      <img src="images/pic.jpg" alt="New York" width="1000" height="600">
+    </div>
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </a>
+  <a class="carousel-control-next" href="#demo" data-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </a>
+</div>
+</div>
 </body>
 </html>
